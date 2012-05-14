@@ -1,5 +1,8 @@
 Revision history for IO-Stream-Proxy-SOCKSv4
 
+1.0.1	Sun May 13 06:01:33 EEST 2012
+	Fix requirements.
+
 1.0.0	Sat May 23 13:33:36 2009
 	Initial release.
 

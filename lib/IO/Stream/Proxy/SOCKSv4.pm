@@ -4,7 +4,7 @@ use warnings;
 use strict;
 use Carp;
 
-use version; our $VERSION = qv('1.0.0');    # update POD & Changes & README
+use version; our $VERSION = qv('1.0.1');    # update POD & Changes & README
 
 # update DEPENDENCIES in POD & Makefile.PL & README
 use IO::Stream::const;
@@ -50,7 +50,7 @@ sub PREPARE {
         my ($self, $ip) = @_;
         $self->{_master}{ip} = $ip;
         $self->{out_buf} = pack 'C C n CCCC Z*',
-            VN, CD, $port, split(/\./xms, $ip), $self->{userid};
+            VN, CD, $port, split(/[.]/xms, $ip), $self->{userid};
         $self->{_slave}->WRITE();
     });
     return;
@@ -115,7 +115,7 @@ IO::Stream::Proxy::SOCKSv4 - SOCKSv4 proxy plugin for IO::Stream
 
 =head1 VERSION
 
-This document describes IO::Stream::Proxy::SOCKSv4 version 1.0.0
+This document describes IO::Stream::Proxy::SOCKSv4 version 1.0.1
 
 
 =head1 SYNOPSIS

@@ -1,4 +1,4 @@
-IO-Stream-Proxy-SOCKSv4 version 1.0.0
+IO-Stream-Proxy-SOCKSv4 version 1.0.1
 
 This module is plugin for IO::Stream which allow you to route stream
 through SOCKSv4 proxy.
