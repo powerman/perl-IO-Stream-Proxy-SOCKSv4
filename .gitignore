@@ -1,0 +1,8 @@
+/IO-Stream-Proxy-SOCKSv4-*
+/.build
+/_build*
+/Build
+MYMETA.*
+!META.json
+/.prove
+/tmp/

@@ -1,11 +1,13 @@
 Revision history for IO-Stream-Proxy-SOCKSv4
 
-1.0.2   Thu Oct  3 17:00:36 EEST 2013
-	Remove MYMETA.*
+{{$NEXT}}
+	- Switch to Dist::Milla.
 
-1.0.1	Sun May 13 06:01:33 EEST 2012
-	Fix requirements.
+1.0.2   2013-10-03 17:00:36 EEST
+	- Remove MYMETA.*
 
-1.0.0	Sat May 23 13:33:36 2009
-	Initial release.
+1.0.1	2012-05-13 06:01:33 EEST
+	- Fix requirements.
 
+1.0.0	2009-05-23 13:33:36 EEST
+	- Initial release.
