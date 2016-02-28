@@ -53,10 +53,19 @@ target {host} (and not when socket will connect to SOCKS proxy itself).
 
 # INTERFACE 
 
-- new({ host=>$host, port=>$port })
-- new({ host=>$host, port=>$port, userid=>$ENV{USER} })
+## new
 
-    Connect to proxy $host:$port, optionally using given userid (empty by default).
+    $plugin = IO::Stream::Proxy::SOCKSv4->new({
+        host    => $host,
+        port    => $port,
+    });
+    $plugin = IO::Stream::Proxy::SOCKSv4->new({
+        host    => $host,
+        port    => $port,
+        userid  => $ENV{USER},
+    });
+
+Connect to proxy $host:$port, optionally using given userid (empty by default).
 
 # DIAGNOSTICS
 
@@ -120,7 +129,7 @@ Alex Efros &lt;powerman@cpan.org>
 
 # COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2009 by Alex Efros &lt;powerman@cpan.org>.
+This software is Copyright (c) 2009- by Alex Efros &lt;powerman@cpan.org>.
 
 This is free software, licensed under:
 
